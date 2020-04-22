@@ -13,7 +13,7 @@ function App() {
         <About />
         <Snowfall
   // Controls the number of snowflakes that are created (default 150)
-  snowflakeCount={20}
+  snowflakeCount={500}
 />
         {/* <Resume data={this.state.resumeData.resume}/>
         <Portfolio data={this.state.resumeData.portfolio}/>
