@@ -10,19 +10,17 @@ class Header extends Component {
     var city = data.main.address.city;
     var networks = data.main.social.map(function (network) {
         return (
-            <SocialIcon url={network.url}/>
+            <SocialIcon id={network.name} url={network.url}/>
       );
     });
       
     return (
-      <section id="home" class="hero">
+      <section id="home" className="hero">
         <h1>I'm {name}.</h1>
         <h2>
           {occupation} in {city}
         </h2>
-
             <p>{description}.</p>
-
             <hr />
             <ul className="social">
                 {networks}

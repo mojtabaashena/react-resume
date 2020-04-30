@@ -1,27 +1,39 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import Header from './Components/Header'
 import About from './Components/About'
 import Menue from './Components/Menue';
+import Skills from './Components/Skills'
 import Snowfall from 'react-snowfall'
+import RandomColor from 'randomcolor'
 
-function App() {
-  return (
+class App extends Component {
+  constructor(){
+    super();
+
+    this.state = {
+       themeColor: "#282c34" 
+    }
+}
+
+changeColor(){
+   this.setState({themeColor: RandomColor.call()})
+   console.log(this.state.themeColor)
+}
+render(){  
+return (
+
       <div className="site" >
+        <Snowfall snowflakeCount={200} color={this.state.themeColor}/>
         <Menue />
+        <img className="changestylebtn" onClick={()=>this.changeColor()}  src="/images/magicwand.png"/>
         <Header />
-        <About />
-        <Snowfall
-  // Controls the number of snowflakes that are created (default 150)
-  snowflakeCount={500}
-/>
-        {/* <Resume data={this.state.resumeData.resume}/>
-        <Portfolio data={this.state.resumeData.portfolio}/>
-        <Testimonials data={this.state.resumeData.testimonials}/>
-        <Contact data={this.state.resumeData.main}/>
-        <Footer data={this.state.resumeData.main}/> */}
+        <About themeColor={this.state.themeColor} />
+        <Skills themeColor={this.state.themeColor} />
       </div>
   );
+
+}  
 }
 
 export default App;

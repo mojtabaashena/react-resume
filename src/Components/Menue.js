@@ -4,50 +4,21 @@ class Menue extends Component {
   render() {
     return (
       <div>
-     
-	<nav class="nav">
-		<div class="nav__title">Resume</div>
-		<ul class="nav__list">
-			<li class="nav__item"><a href="#home">Home</a></li>
-			<li class="nav__item"><a href="#about">About</a></li>
-            <li class="nav__item"><a href="#skills">Skills</a></li>
-		</ul>
-	</nav>
-	
-	{/* <div class="subnav">
-		<div class="subnav__container">
-			<div class="subnav__title">
-				<h1>Sub Nav</h1>
-			</div>
-			<ul class="subnav__list">
-				<li class="subnav__item">Section 1</li>
-				<li class="subnav__item">Section 2</li>
-				<li class="subnav__item">Section 3</li>
-			</ul>
-		</div>
-	</div> */}
+     	<nav id="nav-wrap">
 
-	{/* <section class="section">
-		<h2>A Section</h2>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, minus laudantium excepturi incidunt voluptate impedit quisquam. Dicta sed, ea perferendis consequuntur expedita nesciunt nam quae omnis voluptatibus corporis. Voluptate, cumque?</p>
-	</section>
-	<section class="section">
-		<h2>A Section</h2>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, minus laudantium excepturi incidunt voluptate impedit quisquam. Dicta sed, ea perferendis consequuntur expedita nesciunt nam quae omnis voluptatibus corporis. Voluptate, cumque?</p>
-	</section>
-	<section class="section">
-		<h2>A Section</h2>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, minus laudantium excepturi incidunt voluptate impedit quisquam. Dicta sed, ea perferendis consequuntur expedita nesciunt nam quae omnis voluptatibus corporis. Voluptate, cumque?</p>
-	</section>
-	<section class="section">
-		<h2>A Section</h2>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, minus laudantium excepturi incidunt voluptate impedit quisquam. Dicta sed, ea perferendis consequuntur expedita nesciunt nam quae omnis voluptatibus corporis. Voluptate, cumque?</p>
-	</section>
-	<footer>
-		<p>No Copyright 1996</p>
-	</footer> */}
-</div>
-    );
+			<a className="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+			<a className="mobile-btn" href="#home" title="Hide navigation">Hide navigation</a>
+
+			<ul id="nav" className="nav">
+				<li className="current"><a className="smoothscroll" href="#home">Home</a></li>
+				<li><a className="smoothscroll" href="#about">About</a></li>
+				<li><a className="smoothscroll" href="#skills">Skills</a></li>
+				<li><a className="smoothscroll" href="#skills">Skills</a></li>
+			</ul>
+
+		</nav>
+	</div>)
+
   }
 }
 
