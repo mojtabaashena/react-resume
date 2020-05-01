@@ -26,7 +26,7 @@ return (
       <div className="site" >
         <Snowfall snowflakeCount={200} color={this.state.themeColor}/>
         <Menue />
-        <img className="changestylebtn" onClick={()=>this.changeColor()}  src="/images/magicwand.png"/>
+        <img className="changestylebtn" onClick={()=>this.changeColor()}  src="https://mojtabaashena.github.io/react-resume/images/magicwand.png"/>
         <Header />
         <About themeColor={this.state.themeColor} />
         <Skills themeColor={this.state.themeColor} />

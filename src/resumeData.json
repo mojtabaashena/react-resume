@@ -48,37 +48,37 @@
         {
           "name":"ReactJs",
           "level":"50%",
-          "imagepath" :"/images/reactjs.png"
+          "imagepath" :"https://mojtabaashena.github.io/react-resume/images/reactjs.png"
         },
         {
           "name":"Visual Studio",
           "level":"60%",
-          "imagepath" :"/images/visualstudio.png"
+          "imagepath" :"https://mojtabaashena.github.io/react-resume/images/visualstudio.png"
         },
         {
           "name":"C#",
           "level":"55%",
-           "imagepath" :"/images/csharp.png"
+           "imagepath" :"https://mojtabaashena.github.io/react-resume/images/csharp.png"
         },  
         {
           "name":"SQL Server",
           "level":"50%",
-           "imagepath" :"/images/sqlserver.png"
+           "imagepath" :"https://mojtabaashena.github.io/react-resume/images/sqlserver.png"
         },     
         {
           "name":"MongoDB",
           "level":"80%",
-          "imagepath" :"/images/mongodb.png"
+          "imagepath" :"https://mojtabaashena.github.io/react-resume/images/mongodb.png"
         },
         {
           "name":"CSS",
           "level":"90%",
-          "imagepath" :"/images/css3.png"
+          "imagepath" :"https://mojtabaashena.github.io/react-resume/images/css3.png"
         },
         {
           "name":"HTML5",
           "level":"80%",
-          "imagepath" :"/images/html5.png"
+          "imagepath" :"https://mojtabaashena.github.io/react-resume/images/html5.png"
         }
       ]
     }
